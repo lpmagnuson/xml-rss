@@ -11,26 +11,27 @@ $rss = '<?xml version="1.0" encoding="ISO-8859-1"?>';
   $rss .= '<language>en-us</language>';
   $rss .= '<copyright>Copyright (C) 2015 library.csun.edu</copyright>';
   
-//pull the New Titles Xerxes XML endpoint and register the default namespace
-$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=15";
+//pull the New Titles Xerxes XML endpoint, get 15 titles and register the default namespace
+$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=25";
 $xml = simplexml_load_file($url);
 $xml->registerXPathNamespace('default', 'http://www.loc.gov/MARC21/slim');
 
-//Get yesterday's date
+//Get the date from one month ago
 $date = new DateTime();
-$date->sub(new DateInterval('P2D'));
-$yesterday = $date->format('m-d-y');
+$date->sub(new DateInterval('P1M'));
+$prevmonth = $date->format('m-d-y');
 
-//find the dates all the records were created in the 945|z field
-$newtoday = $xml->xpath("//default:record/default:datafield[@tag='945']/default:subfield[@code='z']");
+//find the dates all the bib records were created on in the cat date 998|b field
+$newtoday = $xml->xpath("//default:record/default:datafield[@tag='998']/default:subfield[@code='b']");
 $entry = $xml->xpath("//results/records/record");
 
-//create array of only records published yesterday
+//create array of only bib records created in the past month
 foreach($newtoday as $new) {
     $link = $new->xpath("../../../xerxes_record/record_id")[0];
 	$title = $new->xpath("../../../xerxes_record/title_statement")[0];
 	$callnum = $new->xpath("../../../xerxes_record/call_number")[0];
-    if ($new == $yesterday) {
+	$bibcreated = strtotime($new)[0];
+    if ($bibcreated < $prevmonth) {
       $rss .= '<date>' . $new . '</date>';
 	  $rss .= '<item>';
       $rss .= '<title>' . $title . " " . $callnum . '</title>';

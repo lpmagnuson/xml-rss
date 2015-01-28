@@ -1,17 +1,32 @@
 <?php
-$html = "";
-$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=10";
+$html = "<table><tr><td><strong>Title/Author</strong></td><td><strong>Call Number</strong></td></tr>";
+  
+//pull the New Titles Xerxes XML endpoint, get 15 titles and register the default namespace
+$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=25";
 $xml = simplexml_load_file($url);
-for($i = 0; $i < 10; $i++){
-$link = $xml->results->records->record[$i]->xerxes_record->record_id;
-$title = $xml->results->records->record[$i]->xerxes_record->title_statement;
-$description = $xml->channel->item[$i]->description;
-$pubDate = $xml->channel->item[$i]->pubDate;
-$html .= "<a href='http://suncat.csun.edu/record=$link'><h3>$title</h3></a>";
-$html .= "$description";
-$html .= "<br />$pubDate<hr />";
-}
+$xml->registerXPathNamespace('default', 'http://www.loc.gov/MARC21/slim');
+
+//Get the date from one month ago
+$date = new DateTime();
+$date->sub(new DateInterval('P1M'));
+$prevmonth = $date->format('m-d-y');
+
+//find the dates all the bib records were created on in the cat date 998|b field
+$newtoday = $xml->xpath("//default:record/default:datafield[@tag='998']/default:subfield[@code='b']");
+$entry = $xml->xpath("//results/records/record");
+
+//create array of only bib records created in the past month
+foreach($newtoday as $new) {
+    $link = $new->xpath("../../../xerxes_record/record_id")[0];
+	$title = $new->xpath("../../../xerxes_record/title_statement")[0];
+	$callnum = $new->xpath("../../../xerxes_record/call_number")[0];
+	$bibcreated = strtotime($new)[0];
+    if ($bibcreated < $prevmonth) {
+	  $html .= "<tr><td>";
+	  $html .= "<a href='http://suncat.csun.edu/record=$link'><h3>$title</h3></a>";
+      $html .= "</td><td>" . $callnum . "</td></tr>";
+	  }
+	}
+$html .= "</table>";
 echo $html;
-//echo $title;
-//echo $link;
 ?>
