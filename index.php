@@ -2,7 +2,7 @@
 $html = "<table><tr><td><strong>Title/Author</strong></td><td><strong>Call Number</strong></td></tr>";
   
 //pull the New Titles Xerxes XML endpoint, get 15 titles and register the default namespace
-$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=25";
+$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=200";
 $xml = simplexml_load_file($url);
 $xml->registerXPathNamespace('default', 'http://www.loc.gov/MARC21/slim');
 
@@ -22,9 +22,7 @@ foreach($newtoday as $new) {
 	$callnum = $new->xpath("../../../xerxes_record/call_number")[0];
 	$bibcreated = strtotime($new)[0];
     if ($bibcreated < $prevmonth) {
-	  $html .= "<tr><td>";
-	  $html .= "<a href='http://suncat.csun.edu/record=$link'><h3>$title</h3></a>";
-      $html .= "</td><td>" . $callnum . "</td></tr>";
+	  $html .= "<tr><td><a href='http://suncat.csun.edu/record=$link'><h3>$title</h3></a></td><td>" . $callnum . "</td></tr>";
 	  }
 	}
 $html .= "</table>";
