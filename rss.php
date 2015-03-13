@@ -12,11 +12,7 @@ $rss = '<?xml version="1.0" encoding="ISO-8859-1"?>';
   $rss .= '<copyright>Copyright (C) 2015 library.csun.edu</copyright>';
   
 //pull the New Titles Xerxes XML endpoint, get 15 titles and register the default namespace
-<<<<<<< HEAD
 $url = "http://library.calstate.edu/northridge/solr/new-titles?format=xerxes&max=25";
-=======
-$url = "http://cowewpaq01.calstate.edu/northridge/solr/new-titles?format=xerxes&max=25";
->>>>>>> 9eae7198990162dab4d51087f5e1b8f54fdfe4e0
 $xml = simplexml_load_file($url);
 $xml->registerXPathNamespace('default', 'http://www.loc.gov/MARC21/slim');
 
