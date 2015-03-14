@@ -41,6 +41,21 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Advanced techniques in web intelligence-2 :web user browsing behaviour and preference analysis</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300917</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Apps for librarians[electronic resource] :using the best mobile technology to educate, create, and engage / Hennig, Nicole.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3320894</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Censors at work :how states shaped literature / Darnton, Robert, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313728</link>';
+      $rss .= '</item>';
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

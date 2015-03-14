@@ -40,6 +40,32 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The art of musical conducting / Whitwell, David, 1937-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3312821</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Barefoot in Babylon :the creation of the Woodstock music festival, 1969 / Spitz, Bob.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301406</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The Baroque wind band and wind ensemble / Whitwell, David, 1937-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313912</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Baroque wind band and wind ensemble repertoire / Whitwell, David, 1937-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313920</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Berlioz on bands :a compilation of Berlioz\'s writings on bands and wind instruments / Berlioz, Hector, 1803-1869.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3312830</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

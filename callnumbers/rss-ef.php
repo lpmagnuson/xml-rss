@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>After the rebellion :black youth, social movement activism, and the post-civil rights generation / Franklin, Sekou M.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300831</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Against immediate evil :American internationalists and the four freedoms on the eve of World War II / Johnstone, Andrew (Andrew E.), author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313533</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>American capitals[electronic resource] :a historical geography / Montès, Christian, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314270</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>American exceptionalism :an idea that made a nation and remade the world / Restad, Hilde.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313475</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Americans recaptured[electronic resource] :progressive era memory of frontier captivity / Varley, Molly K. (Molly Kathleen), 1976-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314258</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

@@ -40,6 +40,23 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The language of murder cases :intentionality, predisposition, and voluntariness / Shuy, Roger W.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301412</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Music airplay and the proposed Performance Rights Act</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299414</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The practical guide to HIPAA privacy and security compliance / Herold, Rebecca, author</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313423</link>';
+      $rss .= '</item>';
+	  
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

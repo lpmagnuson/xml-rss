@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Atheist awakening: secular activism and community in America / Cimino, Richard P</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3302711</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Atheist mind, humanist heart :rewriting the Ten commandments for the twenty-first century / Bayer, Lex, 1978-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3302693</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Between Jewish tradition and modernity :rethinking an old opposition : essays in honor of David Ellenson</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301539</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The Bhagavad Gita :a biography / Davis, Richard H., 1951- author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3302695</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Controversial new religions</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299864</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

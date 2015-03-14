@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Advances in non-volatile memory and storage technology /</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3320946</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Bathrooms :a professional\'s illustrated design and remodeling guide / Powers, Chase M.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314599</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Crisis without end[electronic resource] :the medical and ecological consequences of the Fukushima nuclear catastrophe</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314273</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Critical urban infrastructure handbook[electronic resource]</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3320879</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Dictionary of energy[electronic resource]</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313852</link>';
+      $rss .= '</item>';
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

@@ -12,7 +12,7 @@ $rss = '<?xml version="1.0" encoding="ISO-8859-1"?>';
   $rss .= '<copyright>Copyright (C) 2015 library.csun.edu</copyright>';
   
 //pull the New Titles Xerxes XML endpoint, get 15 titles and register the default namespace
-$url = "http://library.calstate.edu/northridge/solr/new-titles?format=xerxes&max=100";
+$url = "http://library.calstate.edu/northridge/solr/new-titles?format=xerxes&max=1000";
 $xml = simplexml_load_file($url);
 $xml->registerXPathNamespace('default', 'http://www.loc.gov/MARC21/slim');
 
@@ -40,6 +40,34 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>2014 nurse\'s drug handbook.[electronic resource]</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313941</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The ACT matrix[electronic resource] :a new approach to building psychological flexibility across settings &amp; populations /</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314252</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Adventure therapy[electronic resource] :theory, research, and practice / Gass, Michael A.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314301</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Aging in rural places[electronic resource] :policies, programs, and professional practice / Hash, Kristina Michelle, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313854</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Augmentative and alternative communication :models and applications for educators, speech-language pathologists, psychologists, caregivers, and users / Loncke, Filip, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299485</link>';
+      $rss .= '</item>';	
+	  
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

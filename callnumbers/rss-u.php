@@ -40,6 +40,18 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+	//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Care of military service members, veterans, and their families[electronic resource]</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313853</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The modern mercenary :private armies and what they mean for world order / McFate, Sean, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313455</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

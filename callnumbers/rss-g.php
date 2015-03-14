@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Anthropological conversations[electronic resource] :talking culture across disciplines</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314262</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Can you survive the desert?[electronic resource] :an interactive survival adventure / Doeden, Matt.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314304</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Circling the midnight sun :culture and change in the invisible Arctic / Raffan, James, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300694</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Creating special events / DeLisle, Lee J., 1954- author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301618</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Environment / Raven, Peter H.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313435</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

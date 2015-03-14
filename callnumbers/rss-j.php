@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+
+	//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>American exceptionalism and the remains of race[electronic resource] :multicultural exorcisms / Fong, Edmund, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314274</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Blackballed :the Black vote and US democracy / Pinckney, Darryl, 1953-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301581</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Branding for the public sector[electronic resource] :creating, building and managing brands people will value / Temporal, Paul, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3320884</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Communicating politics online[electronic resource] :changing modes, changing information / Rackaway, Chapman, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314275</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Constructing democratic governance in Latin America</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300889</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

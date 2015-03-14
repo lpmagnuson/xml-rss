@@ -40,6 +40,32 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>101+ careers in gerontology[electronic resource] / Grabinski, C. Joanne, 1941-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313857</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Abortion, execution, and the consequences of taking life / Slack, James D., 1952-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301311</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The advertising effect :how to change behaviour / Ferrier, Adam, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300630</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Agricultural Russia and the wheat problem, Timoshenko, Vladimir P. (Vladimir Prokopovich), 1885-1965.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b1112568</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Anthropological explorations in queer theory / Graham, Mark, 1960-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301285</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

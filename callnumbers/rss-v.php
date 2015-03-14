@@ -40,6 +40,12 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Steamboats on the Indus :the limits of western technological superiority in South Asia / Dewey, Clive J., 1945- author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300782</link>';
+      $rss .= '</item>';
+	  
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

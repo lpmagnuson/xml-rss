@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Armenian Christianity today :identity politics and popular practice</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301547</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The art of peacemaking :selected political essays by Istvan Bibo / Bibó, István, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313509</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Benoni, son of my sorrow;the social, political and economic history of a South African gold mining town, Humphriss, Deryck.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b1056843</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Burning Japan :Air Force bombing strategy change in the Pacific / Schwabe, Daniel T., 1980-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313458</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Chechens :culture and society / Layton, Katherine S., author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313463</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Accretion processes in astrophysics :XXI Canary Islands Winter School of Astrophysics</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313600</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Analytic number theory, approximation theory, and special functions :in honor of Hari M. Srivastava</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299914</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Analyzing spatial models of choice and judgment with R / Armstrong, David A., II, 1976-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3302716</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Applications of group theory to atoms, molecules, and solids / Wolfram, Thomas, 1936-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3288264</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Aristotle\'s ladder, Darwin\'s tree[electronic resource] :the evolution of visual metaphors for biological order / Archibald, J. David, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3320811</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

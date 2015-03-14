@@ -40,6 +40,27 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>American catch :the fight for our local seafood / Greenberg, Paul, 1967-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301463</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Food systems in an unequal world :pesticides, vegetables, and agrarian capitalism in Costa Rica / Galt, Ryan E., 1977- author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313340</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>A history of the garden in fifty tools / Laws, Bill, author.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313266</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Who\'s buying for pets.[electronic resource].</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313231</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

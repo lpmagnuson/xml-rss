@@ -40,6 +40,32 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Art critiques :a guide / Elkins, James, 1955-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299228</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The art of the Hobbit by J.R.R. Tolkien / Hammond, Wayne G.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3302647</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The capture coloring book</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3313930</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Caro :close up / Bryant, Julius.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301500</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Ceramics in America.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b1161799</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Adolescent literacies and the gendered self[electronic resource] :(re)constructing identities through multimodal literacy practices</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3314242</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Advancing higher education with mobile learning technologies[electronic resource] :cases, trends, and inquiry-based methods</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3320933</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>The Assessment and education of slow-learning children</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b1122060</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Autism Spectrum Disorder in Children and Adolescents :evidence-based assessment and intervention in schools</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301535</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Beyond bulimic learning :improving teaching in further education / Coffield, Frank.</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3293388</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

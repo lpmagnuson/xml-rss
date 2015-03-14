@@ -40,6 +40,14 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Diverging paths? :the shapes of power and institutions in medieval Christendom and Islam</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3300769</link>';
+      $rss .= '</item>';
+	  
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';

@@ -40,6 +40,33 @@ foreach($newtoday as $new) {
       $rss .= '</item>';
 	  }
 	}
+	
+//Add some items by default
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>... the years of wandering in many lands and cities. Wolfe, Thomas, 1900-1938</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3321466</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Acts :theater, philosophy, and the performing self / Zamir, Tzachi, 1967-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299432</link>';
+      $rss .= '</item>';
+$rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Africa39 :new writing from Africa south of the Sahara</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3301582</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>All the light we cannot see :a novel / Doerr, Anthony, 1973-</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3312820</link>';
+      $rss .= '</item>';
+ $rss .= '<date>03-13-2015</date>';
+	  $rss .= '<item>';
+      $rss .= '<title>Amazing ourselves to death :Neil Postman\'s brave new world revisited</title>';
+      $rss .= '<link>http://suncat.csun.edu/record=b3299844</link>';
+      $rss .= '</item>';	
 //close up the feed
 $rss .= '</channel>';
 $rss .= '</rss>';
